@@ -1,0 +1,54 @@
+/*
+$colors--primary: #2cbfff;
+*/
+
+.george {
+    position: relative;
+    display: inline-block;
+}
+
+.george > .innerCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    transition: 200ms all;
+    background-color: #2cbfff;
+    border-radius: 50%;
+    animation: 4s george--breath--inner alternate infinite;
+}
+
+.george > .outerCircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 200ms all;
+    background-color: transparentize(#2cbfff, 0.5);
+    border-radius: 50%;
+    animation: 4s george--breath--outer alternate infinite;
+}
+
+@keyframes george--breath--inner {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+}
+
+@keyframes george--breath--outer {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 0.9;
+    }
+}

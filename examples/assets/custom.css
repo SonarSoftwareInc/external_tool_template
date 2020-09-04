@@ -1,0 +1,203 @@
+/* SONAR VARIABLE */
+:root {
+    --colors--neutral--black1: #021627;
+    --colors--neutral--grey2: #212B39;
+    --colors--neutral--grey3: #4a5a68;
+    --colors--neutral--white1: #ffffff;
+    --colors--primary: #2cbfff;
+    --colors--primary-bright: #2cbfff;
+    --colors--primary2: #165f7f;
+    --colors--primary3: #095280;
+    
+    --bg--gradient1: linear-gradient(200deg, rgba(85, 103, 119, 0.95), rgba(85, 89, 119, 0.95));
+    --bg--transparent--light: rgba(255,255,255, 0.1);
+}
+
+html {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+    background-color: var(--colors--neutral--black1);
+    color: var(--colors--neutral--grey3);
+}
+
+
+
+
+/* FORM */
+
+.form {
+    padding: 2rem;
+}
+
+.form--standard {
+    background-color: var(--bg--transparent--light);
+
+}
+
+
+
+
+/* BUTTON */
+/* .btn {
+    background: var(--bg--gradient1);
+    border-color: var(--colors--neutral--grey3);
+    color: #ffffff;
+} */
+
+.btn-primary {
+    color: var(--colors--neutral--white1);
+    background: var(--bg--gradient1);
+    border-color: var(--colors--neutral--grey3);
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+    border-color: var(--colors--neutral--grey3); 
+}
+
+.btn:hover {
+    animation: button--pulse 1s infinite alternate;
+}
+
+.btn--submit {
+    background: linear-gradient(200deg, var(--colors--primary), var(--colors--primary-bright));
+    border-color: var(--colors--primary-bright);
+    color: #var(--colors--neutral--white1);
+}
+
+.btn--submit:hover {
+    background: linear-gradient(200deg, var(--colors--primary-bright), var(--colors--primary));
+    border-color: var(--colors--primary-bright);
+    color: #var(--colors--neutral--white1);
+}
+
+.btn--submit,
+.btn--cancel {
+    height: 38px;
+    line-height: 38px;
+    padding: 0 3rem;
+    height: 38px;
+    font-size: 1rem;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+
+
+
+
+/* GEORGE */
+.sonar--branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.sonar--branding .sonar--logo {
+    height: 60px;
+}
+
+.sonar--branding .sonar--logo--text {
+    color: var(--colors--neutral--white1);
+    font-size: 40px;
+    margin: -5px 0 0 7px;
+    line-height: normal;
+    font-weight: normal;
+}
+
+
+
+
+/* ANIMATIONS */
+@keyframes button--pulse {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.85;
+    }
+}
+
+
+
+
+
+
+/* MODAL */
+.modal-content {
+    border: 0;
+}
+
+.modal-header {
+    align-items: center;
+    background: #162737;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.modal-header .close {
+    color: #fff;
+    font-size: 1.75rem;
+    padding: 1rem 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
+
+.modal-title {
+    line-height: 1.5;
+    font-size: 30px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+.modal-body {
+    box-shadow: 0 12px 44px rgba(0, 0, 0, 0.1);
+    background: #edeff2;
+}
+
+.modal-dialog {
+    width: 100%;
+    max-width: 968px;
+}
+
+
+.modal-footer {
+    padding: 1.5rem;
+    background: var(--colors--neutral--black1);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.modal-footer .btn {
+    margin-right: 20px;
+}
+
+.modal-footer .btn:last-child {
+    margin-right: 0;
+}
+
+
+
+
+
+
+/* TABLE */
+
+.table {}
+
+.table-dark {}

@@ -1,4 +1,10 @@
-/* SONAR VARIABLE */
+/**
+ *
+ * SONAR DARK THEME
+ * An override of the Bootstrap base theme
+ * 
+*/
+
 :root {
     --colors--neutral--black1: #021627;
     --colors--neutral--grey2: #212B39;
@@ -17,7 +23,7 @@
     /// Text //
     //////////////////////
     */
-    --text--font--family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !default; // $global--fontFamily should match.  probably won't ever change, so manually copying this.
+    --text--font--family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !default;
     --text--size--h1: 34px;
     --text--size--h2: 26px;
 }
@@ -59,7 +65,7 @@ body {
 /* .btn {
     background: var(--bg--gradient1);
     border-color: var(--colors--neutral--grey3);
-    color: #ffffff;
+    color: var(--colors--neutral--white1);
 } */
 
 .btn-primary {
@@ -80,20 +86,21 @@ body {
 .btn--submit {
     background: linear-gradient(200deg, var(--colors--primary), var(--colors--primary-bright));
     border-color: var(--colors--primary-bright);
-    color: #var(--colors--neutral--white1);
+    color: var(--colors--neutral--white1);
 }
 
 .btn--submit:hover {
     background: linear-gradient(200deg, var(--colors--primary-bright), var(--colors--primary));
     border-color: var(--colors--primary-bright);
-    color: #var(--colors--neutral--white1);
+    color: var(--colors--neutral--white1);
 }
 
+.btn,
 .btn--submit,
 .btn--cancel {
     height: 38px;
     line-height: 38px;
-    padding: 0 3rem;
+    padding: 0 2rem;
     height: 38px;
     font-size: 1rem;
 }
@@ -101,7 +108,7 @@ body {
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
-    color: #fff;
+    color: var(--colors--neutral--white1);
     background-color: #0062cc;
     border-color: #005cbf;
 }
@@ -111,6 +118,7 @@ body {
 
 
 /* GEORGE */
+
 .sonar--branding {
     display: flex;
     align-items: center;
@@ -150,6 +158,7 @@ body {
 
 
 /* MODAL */
+
 .modal-content {
     border: 0;
 }
@@ -159,14 +168,14 @@ body {
     background: #162737;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    color: #ffffff;
+    color: var(--colors--neutral--white1);
     display: flex;
     justify-content: space-between;
     padding: 1rem 3rem;
 }
 
 .modal-header .close {
-    color: #fff;
+    color: var(--colors--neutral--white1);
     font-size: 1.75rem;
     padding: 1rem 1rem;
     margin: -1rem -1rem -1rem auto;
@@ -210,20 +219,20 @@ body {
 
 
 
-
-
 /* TABLE */
 
 .table {}
-
 .table-dark {}
 
 
 
-/* NAV PILL */
+
+/* Nav Pill Style */
+
 .nav-pills .nav-link,
+
 .nav-pills .show > .nav-link {
-    color: #fff;
+    color: var(--colors--neutral--white1);
     display: inline-flex;
     align-items: center;
     justify-content: center;

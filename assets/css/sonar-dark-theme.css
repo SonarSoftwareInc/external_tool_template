@@ -103,6 +103,12 @@ a {
     background: var(--colors--neutral--grey2);
     color: var(--colors--neutral--grey4);
 }
+.form-inline .form-control:not(.is-valid):not(.is-invalid),
+.form-standard .custom-select:not(.is-valid):not(.is-invalid),
+.form-standard .form-control:not(.is-valid):not(.is-invalid),
+.form-signin input {
+    border-color: var(--colors--neutral--grey3);
+}
 .form-signin input,
 .form-inline .form-control {
     border: none;

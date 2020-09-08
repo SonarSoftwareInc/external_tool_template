@@ -9,460 +9,714 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Sonar Dark Theme CSS -->
     <link href="assets/css/sonar-dark-theme.css" rel="stylesheet">
 
-    <style>
-      .container--section {
-        margin: 10vh 0;
-      }
-
-      .form-signin {
-        width: 100%;
-        max-width: 330px;
-        padding: 15px;
-        margin: auto;
-      }
-      .form-signin .checkbox {
-        font-weight: 400;
-      }
-      .form-signin .form-control {
-        position: relative;
-        box-sizing: border-box;
-        height: auto;
-        padding: 10px;
-        font-size: 16px;
-      }
-      .form-signin .form-control:focus {
-        z-index: 2;
-      }
-      /* .form-signin input[type="email"] {
-        margin-bottom: -1px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-      .form-signin input[type="password"] {
-        margin-bottom: 10px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      } */
-
-      h2 {
-        margin-bottom: 30px;
-      }
-
-
-
-      
-      /* .section-label {
-        background-color: #fff;
-        display: inline-block;
-        font-size: 30px;
-        margin-bottom: 10vh;
-        margin-left: -20px;
-        padding: 20px 40px 10px;
-      } */
-    </style>
+    <!-- Doc Page CSS -->
+    <link href="assets/css/doc.css" rel="stylesheet">
   </head>
   <body>
-
-    <!--
-      =================================================================================
-      LOGIN 
-      =================================================================================
-    -->
-
-    <div class="container container--section">
-      <div class="row">
-        <div class="col-12">
-
-          <div class="section-label">
-            <h2>LOGIN</h2>
-          </div>
-
-          <form class="form-signin text-center">
-            <div class="sonar--branding">
-              <img class="sonar--logo" src="assets/brand/george.png">
-              <h2 class="sonar--logo--text">sonar</h2>
-            </div>
-
-            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-
-            <div class="form-group col-12">
-              <label for="inputEmail" class="sr-only">Email address</label>
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-            </div>
-            <div class="form-group col-12">
-              <label for="inputPassword" class="sr-only">Password</label>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            </div>
-
-            <div class="checkbox mb-3">
-              <label>
-                <input type="checkbox" value="remember-me"> Remember me
-              </label>
-            </div>
-
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2020, Sonar Software.</p>
-          </form>
-        
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-    <!--
-      =================================================================================
-      TAB - PILL EXAMPLE 
-      =================================================================================
-    -->
-
-    <div class="container container--section">
-      <div class="row">
-        <div class="col-12">
-
-          <div class="section-label">
-            <h2>TAB PILLS EXAMPLE</h2>
-          </div>
-
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-              Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam.
-              Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing
-              aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis
-              veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non
-              adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-            </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-              Nulla est ullamco ut irure incididunt nulla Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore
-              cillum sint adipisicing exercitation ipsum. Nostrud ut anim non exercitation velit laboris fugiat cupidatat. Commodo
-              esse dolore fugiat sint velit ullamco magna consequat voluptate minim amet aliquip ipsum aute laboris nisi. Labore
-              labore veniam irure irure ipsum pariatur mollit magna in cupidatat dolore magna irure esse tempor ad mollit. Dolore
-              commodo nulla minim amet ipsum officia consectetur amet ullamco voluptate nisi commodo ea sit eu.
-            </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-              Sint sit mollit irure quis est nostrud cillum consequat Lorem esse do quis dolor esse fugiat sunt do. Eu ex commodo
-              veniam Lorem aliquip laborum occaecat qui Lorem esse mollit dolore anim cupidatat. Deserunt officia id Lorem nostrud
-              aute id commodo elit eiusmod enim irure amet eiusmod qui reprehenderit nostrud tempor. Fugiat ipsum excepteur in aliqua
-              non et quis aliquip ad irure in labore cillum elit enim. Consequat aliquip incididunt ipsum et minim laborum laborum
-              laborum et cillum labore. Deserunt adipisicing cillum id nulla minim nostrud labore eiusmod et amet. Laboris consequat
-              consequat commodo non ut non aliquip reprehenderit nulla anim occaecat. Sunt sit ullamco reprehenderit irure ea ullamco
-              Lorem aute nostrud magna.
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-    <!--
-      =================================================================================
-      FORM
-      =================================================================================
-    -->
-
-    <div class="container container--section">
-      <div class="row">
-        <div class="col-12">
-
-          <div class="section-label">
-            <h2>INLINE FORM</h2>
-          </div>
-
-          <form class="form-inline">
-            <label class="sr-only" for="inlineFormInputName2">Name</label>
-            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
-
-            <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-            <div class="input-group mb-2 mr-sm-2">
-              <div class="input-group-prepend">
-                <div class="input-group-text">@</div>
-              </div>
-              <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
-            </div>
-
-            <div class="form-check mb-2 mr-sm-2">
-              <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-              <label class="form-check-label" for="inlineFormCheck">
-                Remember me
-              </label>
-            </div>
-
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-          </form>
-
-        </div>
-      </div>
-    </div>
-    
-
-
-
-    <div class="container container--section">
-      <div class="row">
-        <div class="col-12">
-
-          <div class="section-label">
-            <h2>STANDARD FORM</h2>
-          </div>
-
-          <form class="form form--standard">
-            <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationServer01">First name</label>
-                <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="validationServer02">Last name</label>
-                <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationServer03">City</label>
-                <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-                <div id="validationServer03Feedback" class="invalid-feedback">
-                  Please provide a valid city.
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationServer04">State</label>
-                <select class="custom-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>...</option>
-                </select>
-                <div id="validationServer04Feedback" class="invalid-feedback">
-                  Please select a valid state.
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationServer05">Zip</label>
-                <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-                <div id="validationServer05Feedback" class="invalid-feedback">
-                  Please provide a valid zip.
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">1</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">2</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-                <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                <label class="form-check-label" for="invalidCheck3">
-                  Agree to terms and conditions
-                </label>
-                <div  id="invalidCheck3Feedback" class="invalid-feedback">
-                  You must agree before submitting.
-                </div>
-              </div>
-            </div>
-
-            <div class="alert alert-info" role="alert">
-              A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-            </div>
-            
-            <button class="btn btn-primary btn--submit" type="submit">Submit form</button>
-          </form>
-
-        </div>
-      </div>
-    </div>
-
-
-
-
-    <!--
-      =================================================================================
-      MODAL COMPONENT & FORM
-      =================================================================================
-    -->
-    <div class="container container--section">
-      <div class="row">
-        <div class="col-12">
-
-          <div class="section-label">
-            <h2>Modal Component</h2>
-          </div>
-    
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
-          </button>
   
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="section section--header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="sonar--branding  d-flex align-items-center">
+              <img class="sonar--logo" src="assets/brand/george.png">
+              <h2 class="sonar--logo--text">sonar
+                <span class="badge">Dark Theme</span></h2>
+            </div>
+            <h2 class="d-flex align-items-center">A Bootstrap base theme template</h2>
+            <p>A simple dark theme mode on top of Bootstrap original base styles. Below is a list of a few components to help demonstrate look and feel of the UI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <div class="section">
+
+      <!--
+        =================================================================================
+        STARTER 
+        ==================================================================================
+      -->
+      <div class="container container--example">
+        <div class="row">
+          <div class="col-12">
+            
+            <div class="section-label">
+              <h2>Quick Start</h2>
+            </div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+  <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+      <span class="c">&lt;!-- Required meta tags --&gt;</span>
+      <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span>
+  
+      <span class="c">&lt;!-- Bootstrap core CSS --&gt;</span>
+      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/bootstrap.min.css"</span><span class="nt">&gt;</span>
+      
+      <span class="c">&lt;!-- Sonar Dark Theme CSS --&gt;</span>
+      <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/sonar-dark-theme.css"</span><span class="nt">&gt;</span>
+
+      <span class="nt">&lt;title&gt;</span>Hello, world!<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+      <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+  
+      <span class="c">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span>
+      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"assets/js/jquery-3.5.1.slim.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"assets/js/popper.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+      <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"assets/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+    <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span></code></pre>
+</figure>
+          
+          <p>For more details on all Bootstrap core features and functionality visit <a href="https://getbootstrap.com/docs/4.5/components/alerts/" target="_blank">Bootstrap Documentation</a>.
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!--
+        =================================================================================
+        LOGIN 
+        ==================================================================================
+      -->
+      <div class="container  container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section-label">
+              <h2>Login</h2>
+            </div>
+
+            <form class="form-signin text-center">
+              <div class="sonar--branding  d-flex justify-content-center align-items-center">
+                <img class="sonar--logo" src="assets/brand/george.png">
+                <h2 class="sonar--logo--text">sonar</h2>
+              </div>
+              <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+              <div class="form-group col-12">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              </div>
+              <div class="form-group col-12">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassord" class="form-control" placeholder="Password" required>
+              </div>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+              <p class="mt-5 mb-3 text-muted">&copy; 2020, Sonar Software.</p>
+            </form>
+          
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--
+        =================================================================================
+        TOAST - Push Notification 
+        ==================================================================================
+      -->
+      <div class="container  container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section-label">
+              <h2>Toast - Push Notification</h2>
+            </div>
+
+            <!-- Flexbox container for aligning the toasts -->
+            <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="height: 200px;">
+
+              <!-- Then put toasts within -->
+              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="assets/brand/george.png" class="rounded mr-2 brand-logo" alt="...">
+                  <strong class="mr-auto">Bootstrap</strong>
+                  <small>11 mins ago</small>
+                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  
-                  <form class="form">
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputAddress">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="form-group">
-                      <label for="inputAddress2">Address 2</label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                          <option selected>Choose...</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                          Check me out
-                        </label>
-                      </div>
-                    </div>
-
-                    <div class="alert alert-warning" role="alert">
-                      A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                    </div>
-                  </form>
-
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary btn--cancel" data-dismiss="modal">Close</button>
-                  <button class="btn btn-primary" type="button" disabled>
-                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                    Submitting...
-                  </button>
-                  <button class="btn btn-success" type="button" disabled>
-                    Success!
-                  </button>
-                  <!-- manually program this button to submit the form above-->
-                  <button type="submit" class="btn btn-primary btn--submit">Save</button>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
                 </div>
               </div>
             </div>
+          
           </div>
-
         </div>
       </div>
-    </div>
 
 
 
 
-    <!--
-      =================================================================================
-      TABLE
-      =================================================================================
-    -->
-    <div class="container container--section">
-      <div class="row">
-        <div class="col-12">
+      <!--
+        =================================================================================
+        Jumbotron 
+        ==================================================================================
+      -->
+      <div class="container  container--example">
+        <div class="row">
+          <div class="col-12">
 
-          <div class="section-label">
-            <h2>TABLE</h2>
+            <div class="section-label">
+              <h2>Jumbotron</h2>
+            </div>
+
+            <div class="jumbotron">
+              <h1 class="display-4">Hello, world!</h1>
+              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <hr class="my-4">
+              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
           </div>
-
-          <table class="table table-dark table-hover table-striped">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="table-success">
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-
         </div>
       </div>
+
+
+
+      <!--
+        =================================================================================
+        TAB - PILL EXAMPLE 
+        =================================================================================
+      -->
+
+      <div class="container container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section-label">
+              <h2>Tab Pills</h2>
+            </div>
+
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam.
+                Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing
+                aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis
+                veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non
+                adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                Nulla est ullamco ut irure incididunt nulla Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore
+                cillum sint adipisicing exercitation ipsum. Nostrud ut anim non exercitation velit laboris fugiat cupidatat. Commodo
+                esse dolore fugiat sint velit ullamco magna consequat voluptate minim amet aliquip ipsum aute laboris nisi. Labore
+                labore veniam irure irure ipsum pariatur mollit magna in cupidatat dolore magna irure esse tempor ad mollit. Dolore
+                commodo nulla minim amet ipsum officia consectetur amet ullamco voluptate nisi commodo ea sit eu.
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                Sint sit mollit irure quis est nostrud cillum consequat Lorem esse do quis dolor esse fugiat sunt do. Eu ex commodo
+                veniam Lorem aliquip laborum occaecat qui Lorem esse mollit dolore anim cupidatat. Deserunt officia id Lorem nostrud
+                aute id commodo elit eiusmod enim irure amet eiusmod qui reprehenderit nostrud tempor. Fugiat ipsum excepteur in aliqua
+                non et quis aliquip ad irure in labore cillum elit enim. Consequat aliquip incididunt ipsum et minim laborum laborum
+                laborum et cillum labore. Deserunt adipisicing cillum id nulla minim nostrud labore eiusmod et amet. Laboris consequat
+                consequat commodo non ut non aliquip reprehenderit nulla anim occaecat. Sunt sit ullamco reprehenderit irure ea ullamco
+                Lorem aute nostrud magna.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!--
+        =================================================================================
+        BUTTONS EXAMPLE 
+        =================================================================================
+      -->
+
+      <div class="container container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section-label">
+              <h2>Buttons</h2>
+            </div>
+
+            <p>Solid buttons</p>
+            <div>
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-secondary">Secondary</button>
+              <button type="button" class="btn btn-success">Success</button>
+              <button type="button" class="btn btn-danger">Danger</button>
+              <button type="button" class="btn btn-warning">Warning</button>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-light">Light</button>
+              <button type="button" class="btn btn-dark">Dark</button>
+  
+              <button type="button" class="btn btn-link">Link</button>
+            </div><br>
+            
+            <p>Outline buttons</p>
+            <div>
+              <button type="button" class="btn btn-outline-primary">Primary</button>
+              <button type="button" class="btn btn-outline-secondary">Secondary</button>
+              <button type="button" class="btn btn-outline-success">Success</button>
+              <button type="button" class="btn btn-outline-danger">Danger</button>
+              <button type="button" class="btn btn-outline-warning">Warning</button>
+              <button type="button" class="btn btn-outline-info">Info</button>
+              <button type="button" class="btn btn-outline-light">Light</button>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div><br>
+
+            <!-- Button states -->
+            <div>
+              <button type="button" class="btn btn-primary active">Active</button>
+              <button type="button" class="btn btn-secondary active">Active</button>
+              <button type="button" class="btn btn-primary" disabled>Disabled</button>
+              <button type="button" class="btn btn-secondary" disabled>Disabled</button>
+              <button type="button" class="btn btn-primary" data-toggle="button">Button toggle</button>
+              <button type="button" class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+              <button type="button" class="btn btn-secondary">
+                <span class="spinner-grow spinner-grow-sm mr-2" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!--
+        =================================================================================
+        INLINE FORM
+        =================================================================================
+      -->
+
+      <div class="container  container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section-label">
+              <h2>Inline Form</h2>
+            </div>
+
+            <form class="form-inline">
+              <label class="sr-only" for="inlineFormInputName2">Name</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+              <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+              </div>
+
+              <div class="form-check mb-2 mr-sm-2">
+                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                <label class="form-check-label" for="inlineFormCheck">
+                  Remember me
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!--
+        =================================================================================
+        PROGRESS BARS
+        =================================================================================
+      -->
+
+      <div class="container  container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section-label">
+              <h2>Progress Bars</h2>
+            </div>
+            
+            <div class="progress-example">
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+
+
+
+      <!--
+        =================================================================================
+        STANDARD FORM
+        =================================================================================
+      -->
+      <div class="container  container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section-label">
+              <h2>Standard Form</h2>
+            </div>
+
+            <form class="form-standard">
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationServer01">First name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationServer02">Last name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationServer03">City</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                  <div id="validationServer03Feedback" class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationServer04">State</label>
+                  <select class="custom-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div id="validationServer04Feedback" class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationServer05">Zip</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                  <div id="validationServer05Feedback" class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                  <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                  <label class="form-check-label" for="invalidCheck3">
+                    Agree to terms and conditions
+                  </label>
+                  <div  id="invalidCheck3Feedback" class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Example file input</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+
+              <div class="alert alert-info" role="alert">
+                A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+              </div>
+              
+              <button class="btn btn-primary btn--submit" type="submit">Create</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!--
+        =================================================================================
+        MODAL COMPONENT & FORM
+        =================================================================================
+      -->
+      <div class="container  container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section-label">
+              <h2>Modal Form</h2>
+            </div>
+      
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Launch Modal with Form
+            </button>
+    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <form class="form">
+                      <div class="form-group">
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                          <label class="custom-control-label" for="customSwitch1">Active</label>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">City</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputState">State</label>
+                          <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputZip">Zip</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="alert alert-warning" role="alert">
+                        A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn--cancel" data-dismiss="modal">Close</button>
+                    <!-- manually program this button to submit the form above-->
+                    <button type="submit" class="btn btn-primary btn--submit">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!--
+        =================================================================================
+        TABLE
+        =================================================================================
+      -->
+      <div class="container  container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section-label">
+              <h2>Table</h2>
+            </div>
+
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+
+            <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" checked> Active
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2"> Radio
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3"> Radio
+              </label>
+            </div> -->
+
+            <div class="mb-3 d-flex justify-content-between">
+              <form class="form-inline">
+                <label class="sr-only" for="inlineFormInputSearch1">Username</label>
+                <div class="input-group mb-2 mr-sm-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">Search</div>
+                  </div>
+                  <input type="text" class="form-control" id="inlineFormInputSearch1" placeholder="Filter Search" autofocus>
+                </div>
+              </form>
+              <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+              
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                  <th scope="col">Date</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><input type="checkbox" name="checkbox1" value=""></th>
+                  
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>01/01/2015</td>
+                  <td class="text-right"><button type="button" class="btn btn-outline-secondary">Secondary</button></td>
+                </tr>
+                <tr>
+                  <th scope="row"><input type="checkbox" name="checkbox1" value=""></th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td>01/01/2015</td>
+                  <td class="text-right"><button type="button" class="btn btn-outline-secondary">Secondary</button></td>
+                </tr>
+                <tr>
+                  <th scope="row"><input type="checkbox" name="checkbox1" value=""></th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                  <td>01/01/2015</td>
+                  <td class="text-right"><button type="button" class="btn btn-outline-secondary">Secondary</button></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+
+
     </div>
-
-
 
 
     <!-- JS, Popper.js, and jQuery -->

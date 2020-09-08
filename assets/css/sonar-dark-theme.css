@@ -12,8 +12,9 @@
     --colors--neutral--grey3: #4a5a68;
     --colors--neutral--grey4: #909dad;
     --colors--neutral--white1: #ffffff;
-    --colors--primary: #2cbfff;
+    --colors--neutral--white3: #edeff2;
     --colors--primary-bright: #2cbfff;
+    --colors--primary: #2cbfff;
     --colors--primary0: #0d75bf;
     --colors--primary4: #d5e7f0;
     --colors--primary2: #165f7f;
@@ -53,8 +54,21 @@ a {
     color: var(--colors--primary);
 }
 
+/* Animations */
+
+@keyframes button--pulse {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.85;
+    }
+}
+
 
 /* Badge */
+
 .badge {
     background: var(--colors--primary4);
     border: 1px solid rgba(34, 44, 58, 0.085);
@@ -65,13 +79,11 @@ a {
 }
 .badge-secondary {
     background-color: var(--colors--neutral--grey3);
+    font-weight: 500;
 }
 
 
-
-
-
-/* FORM */
+/* Form */
 
 .form {
     padding: 2rem;
@@ -88,21 +100,25 @@ a {
 .form-standard .custom-select,
 .form-standard .form-control,
 .form-signin input {
-    background: #2c3a47;
-    border: none;
+    background: var(--colors--neutral--grey2);
     color: var(--colors--neutral--grey4);
+}
+.form-signin input,
+.form-inline .form-control {
+    border: none;
 }
 .form-inline .input-group-text {
     background-color: var(--colors--neutral--grey3);
-    border-color: var(--colors--neutral--grey3);
+    border-color: transparent;
     color: var(--colors--neutral--grey4);
 }
 
 
 
 /* Button Primary */
+
 .btn-primary {
-    color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--white3);
     background: var(--colors--primary);
     border-color: var(--colors--primary-bright);
 }
@@ -117,12 +133,12 @@ a {
 .btn--submit {
     background: linear-gradient(200deg, var(--colors--primary), var(--colors--primary-bright));
     border-color: var(--colors--primary-bright);
-    color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--white3);
 }
 .btn--submit:hover {
     background: linear-gradient(200deg, var(--colors--primary-bright), var(--colors--primary));
     border-color: var(--colors--primary-bright);
-    color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--white3);
 }
 .btn,
 .btn--submit,
@@ -133,25 +149,28 @@ a {
     height: 38px;
     font-size: 1rem;
 }
+.btn--icon {
+    padding: 0 1rem;
+}
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
-    color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--white3);
     background: var(--colors--primary0);
     border-color: var(--colors--primary-bright);
 }
 .btn-outline-primary {
-    color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--white3);
     border-color: var(--colors--primary-bright);
 }
 .btn-outline-primary:hover {
     background: var(--colors--primary);
     border-color: var(--colors--primary-bright);
-    color: var(--colors--neutral--white1); 
+    color: var(--colors--neutral--white3); 
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
-    color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--white3);
     background: var(--colors--primary);
     border-color: var(--colors--primary-bright);
 }
@@ -160,7 +179,7 @@ a {
     cursor: not-allowed;
 }
 .btn-info {
-    color: #fff;
+    color: var(--colors--neutral--white3);
     background-color: var(--colors--primary6);
     border-color: var(--colors--primary6);
 }
@@ -169,7 +188,7 @@ a {
 /* Button Secondary */
 
 .btn-secondary {
-    color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--white3);
     background: var(--bg--gradient1);
     border-color: var(--colors--neutral--grey3);
 }
@@ -180,30 +199,29 @@ a {
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {
-    color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--white3);
     background: var(--colors--neutral--grey2);
     border-color: var(--colors--neutral--grey3);
 }
 .btn-outline-secondary {
-    color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--white3);
     border-color: var(--colors--neutral--grey3);
 }
 .btn-outline-secondary:hover {
     background: var(--bg--gradient1);
     border-color: var(--colors--neutral--grey3);
-    color: var(--colors--neutral--white1); 
+    color: var(--colors--neutral--white3); 
 }
 .btn-secondary.disabled,
 .btn-secondary:disabled {
-    color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--white3);
     background: var(--bg--gradient1);
     border-color: var(--colors--neutral--grey3);
 }
 
 
-
-
 /* success */
+
 .btn-success {
     background-color: var(--colors--positive);
     border-color: var(--colors--positive);
@@ -224,6 +242,7 @@ a {
 
 
 /* danger */
+
 .btn-danger {
     background-color: var(--colors--danger);
     border-color: var(--colors--danger);
@@ -260,8 +279,7 @@ a {
 }
 
 
-
-/* GEORGE */
+/* George */
 
 .sonar--branding {
     margin-bottom: 2vh;
@@ -277,44 +295,22 @@ a {
 }
 
 
+/* Toast */
 
-
-/* ANIMATIONS */
-@keyframes button--pulse {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0.85;
-    }
-}
-
-
-/* JUMBOTRON */
-
-/* .jumbotron {
-    background-color: var(--colors--neutral--grey1);
-    color: var(--colors--neutral--grey4);
-} */
-
-
-/* TOAST */
 .toast {}
 .toast-header .brand-logo {
     width: 20px;
 }
 
 
-
-/* MODAL */
+/* Modal */
 
 .modal-content {
     border: 0;
 }
 .modal-header {
     align-items: center;
-    background: #162737;
+    background: var(--colors--neutral--grey1);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     color: var(--colors--neutral--white1);
@@ -337,7 +333,7 @@ a {
 }
 .modal-body {
     box-shadow: 0 12px 44px rgba(0, 0, 0, 0.1);
-    background: #edeff2;
+    background: var(--colors--neutral--white3);
 }
 .modal-dialog {
     width: 100%;
@@ -360,7 +356,7 @@ a {
 
 
 
-/* TABLE */
+/* Table */
 
 .table {
     color: var(--colors--neutral--grey4);
@@ -385,7 +381,7 @@ a {
 
 
 
-/* Nav Pill Style */
+/* Nav Pill */
 
 .nav-pills .nav-link,
 .nav-pills .show > .nav-link {
@@ -411,7 +407,7 @@ a {
 
 
 
-/* BREADCRUMS */
+/* Breadcrumb */
 
 .breadcrumb {
     background-color: var(--colors--neutral--grey1);
@@ -436,7 +432,10 @@ a {
     color: var(--colors--neutral--grey1);
 }
 
-/* Progress bar */
+
+
+/* Progress Bar */
+
 .progress {
     background-color: var(--colors--neutral--grey2);
 }

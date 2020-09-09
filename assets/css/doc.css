@@ -1,27 +1,26 @@
 /* SECTION */
 
-.section {
+.sonar-darknight .section {
     width: 100%;
     padding: 10vh 0;
 }
-.section--header {
+.sonar-darknight .section--header {
     background-color: var(--colors--neutral--grey1);
     color: var(--colors--neutral--grey4);
 }
-.section--login-form {
+.sonar-darknight .section--login-form {
     margin: 10vh 0;
 }
-
-.section-label h2 {
+.sonar-darknight .section-label h2 {
     margin-bottom: 40px;
 }
-.section-label h2 a {
+.sonar-darknight .section-label h2 a {
     margin-left: 5px;
 }
-.section-label h2 .badge {
+.sonar-darknight .section-label h2 .badge {
     font-size: 14px;
 }
-.section-label .badge {
+.sonar-darknight .section-label .badge {
     font-size: 14px;
     display: block;
     padding: 7px 8px;
@@ -31,10 +30,10 @@
 
 /* CONTAINER */
 
-.container--example {
+.sonar-darknight .container--example {
     padding: 10vh 0;
 }
-.container--table {
+.sonar-darknight .container--table {
     background-color: var(--colors--neutral--grey2);
     padding: 40px;
 }
@@ -43,23 +42,23 @@
 
 /* LOGIN PAGE */
 
-.form-signin {
+.sonar-darknight .form-signin {
     width: 100%;
     max-width: 330px;
     padding: 15px;
     margin: auto;
 }
-.form-signin .checkbox {
+.sonar-darknight .form-signin .checkbox {
     font-weight: 400;
 }
-.form-signin .form-control {
+.sonar-darknight .form-signin .form-control {
     position: relative;
     box-sizing: border-box;
     height: auto;
     padding: 10px;
     font-size: 16px;
 }
-.form-signin .form-control:focus {
+.sonar-darknight .form-signin .form-control:focus {
     z-index: 2;
 }
 
@@ -67,51 +66,51 @@
 
 /* progress */
 
-.progress-example > .alert+.alert,
-.progress-example > .nav+.nav,
-.progress-example > .navbar+.navbar,
-.progress-example > .progress+.btn,
-.progress-example > .progress+.progress {
+.sonar-darknight .progress-example > .alert+.alert,
+.sonar-darknight .progress-example > .nav+.nav,
+.sonar-darknight .progress-example > .navbar+.navbar,
+.sonar-darknight .progress-example > .progress+.btn,
+.sonar-darknight .progress-example > .progress+.progress {
     margin-top: 1rem;
 }
 
 
 /* pre code */
 
-.highlight {
+.sonar-darknight .highlight {
     margin-bottom: 1rem;
     background-color: var(--colors--neutral--grey1);
     padding: 20px;
     border-radius: var(--bg-border-radius);
 }
-.highlight pre {
+.sonar-darknight .highlight pre {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
     border: 0;
 }
-.highlight pre code {
+.sonar-darknight .highlight pre code {
     color: var(--colors--neutral--grey4);
 }
-.cp {
+.sonar-darknight .cp {
     color: #008085;
 }
-.c {
+.sonar-darknight .c {
     color: var(--colors--neutral--grey3);
 }
-.nt {
+.sonar-darknight .nt {
     color: var(--colors--primary2);
 }
-.na {
+.sonar-darknight .na {
     color: var(--colors--primary0);
 }
-.s {
+.sonar-darknight .s {
     color: var(--colors--primary5);
 }
 
 
 /* Toast */
 
-.toast {
+.sonar-darknight .toast {
     opacity: 1;
 }

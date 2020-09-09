@@ -29,9 +29,6 @@
     --bg--gradient1: linear-gradient(200deg, rgba(85, 103, 119, 0.95), rgba(85, 89, 119, 0.95));
     --bg--transparent--light: rgba(255,255,255, 0.1);
     --bg-border-radius: .3rem;
-
-    --text--size--h1: 34px;
-    --text--size--h2: 26px;
 }
 
 
@@ -97,6 +94,9 @@ body.sonar-darknight {
 }
 a {
     color: var(--colors--primary);
+}
+hr {
+    border-color: var(--colors--neutral--grey3);
 }
 
 
@@ -253,7 +253,7 @@ a {
     cursor: not-allowed;
 }
 
-/* button info */
+/* Button info */
 
 .sonar-darknight .btn-info {
     background-color: var(--colors--primary6);
@@ -310,7 +310,7 @@ a {
 }
 
 
-/* success */
+/* Button Success */
 
 .sonar-darknight .btn-success {
     background-color: var(--colors--positive);
@@ -328,10 +328,12 @@ a {
 .sonar-darknight .btn-outline-success:hover {
     background-color: var(--colors--positive);
     border-color: var(--colors--positive);
+    color: var(--colors--neutral--white3);
 }
 
 
-/* danger */
+
+/* Button Danger */
 
 .sonar-darknight .btn-danger {
     background-color: var(--colors--danger);
@@ -348,9 +350,10 @@ a {
 .sonar-darknight .btn-outline-danger:hover {
     background-color: var(--colors--danger);
     border-color: var(--colors--danger);
+    color: var(--colors--neutral--white3);
 }
 
-/* warning */
+/* Button Warning */
 
 .sonar-darknight .btn-warning {
     background-color: var(--colors--warning);
@@ -367,6 +370,7 @@ a {
 .sonar-darknight .btn-outline-warning:hover {
     background-color: var(--colors--warning);
     border-color: var(--colors--warning);
+    color: var(--colors--neutral--black1);
 }
 
 
@@ -446,6 +450,14 @@ a {
 
 .sonar-darknight .modal-footer .btn:last-child {
     margin-right: 0;
+}
+
+.sonar-darknight .close {
+    color: var(--colors--neutral--white3);
+    font-weight: 300;
+}
+.sonar-darknight .close:hover {
+    color: var(--colors--neutral--white3);
 }
 
 
@@ -534,4 +546,24 @@ a {
 
 .sonar-darknight .progress {
     background-color: var(--colors--neutral--grey2);
+}
+
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: var(--colors--neutral--grey1);
+    color: var(--colors--neutral--grey4);
+}
+
+
+
+/* Toast: Notification */
+
+.sonar-darknight .toast {
+    border-radius: var(--bg-border-radius);
+}
+.sonar-darknight .toast-header {
+    background-color: var(--colors--neutral--grey1);
+    color: var(--colors--neutral--grey4);
 }

@@ -156,7 +156,11 @@ a {
     font-size: 1rem;
 }
 .btn--icon {
+    align-items: baseline;
     padding: 0 1rem;
+}
+.btn--icon .bi {
+margin-left: 5px;
 }
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
@@ -184,10 +188,26 @@ a {
 .btn:disabled {
     cursor: not-allowed;
 }
+
+/* button info */
+
 .btn-info {
-    color: var(--colors--neutral--white3);
     background-color: var(--colors--primary6);
     border-color: var(--colors--primary6);
+    color: var(--colors--neutral--white3);
+}
+.btn-info:hover {
+    background-color: var(--colors--primary6);
+    border-color: var(--colors--primary6);
+}
+.btn-outline-info {
+    border-color: var(--colors--primary6);
+    color: var(--colors--primary6);
+}
+.btn-outline-info:hover {
+    background-color: var(--colors--primary6);
+    border-color: var(--colors--primary6);
+    color: var(--colors--neutral--white3);
 }
 
 
@@ -304,6 +324,10 @@ a {
 /* Toast */
 
 .toast {}
+.toast-header {
+    background-color: var(--colors--neutral--white1);
+    color: var(--colors--neutral--grey3);
+}
 .toast-header .brand-logo {
     width: 20px;
 }

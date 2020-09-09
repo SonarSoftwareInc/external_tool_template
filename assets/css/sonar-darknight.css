@@ -562,6 +562,10 @@ hr {
 
 .sonar-darknight .toast {
     border-radius: var(--bg-border-radius);
+    overflow: hidden;
+}
+.sonar-darknight .toast-body {
+    background: var(--colors--primary4);
 }
 .sonar-darknight .toast-header {
     background-color: var(--colors--neutral--grey1);

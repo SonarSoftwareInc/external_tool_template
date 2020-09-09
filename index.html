@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Sonar Template with Bootstrap</title>
+    <title>Sonar Dark Night Theme with Bootstrap</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -609,65 +609,66 @@
                   <div class="modal-body">
                     
                     <form class="form">
-                      <div class="form-group">
-                        <div class="custom-control custom-switch">
-                          <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                          <label class="custom-control-label" for="customSwitch1">Active</label>
+                      <div class="form__body">
+                        <div class="form-group">
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">Active</label>
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputEmail4">Email</label>
-                          <input type="email" class="form-control" id="inputEmail4">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                          </div>
                         </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputPassword4">Password</label>
-                          <input type="password" class="form-control" id="inputPassword4">
+                        <div class="form-group">
+                          <label for="inputAddress">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                         </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                      </div>
-                      <div class="form-group">
-                        <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputCity">City</label>
-                          <input type="text" class="form-control" id="inputCity">
+                        <div class="form-group">
+                          <label for="inputAddress2">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                         </div>
-                        <div class="form-group col-md-4">
-                          <label for="inputState">State</label>
-                          <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                          </select>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
                         </div>
-                        <div class="form-group col-md-2">
-                          <label for="inputZip">Zip</label>
-                          <input type="text" class="form-control" id="inputZip">
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="gridCheck">
-                          <label class="form-check-label" for="gridCheck">
-                            Check me out
-                          </label>
+                        <div class="alert alert-warning" role="alert">
+                          A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                         </div>
-                      </div>
-
-                      <div class="alert alert-warning" role="alert">
-                        A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                       </div>
                     </form>
 
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary btn--cancel" data-dismiss="modal">Close</button>
-                    <!-- manually program this button to submit the form above-->
+                    <!-- manually program this button to submit the form above -->
                     <button type="submit" class="btn btn-primary btn--submit">Save</button>
                   </div>
                 </div>
@@ -703,7 +704,7 @@
               </h2>
             </div>
 
-            <form class="form-inline">
+            <form class="form form-inline">
               <label class="sr-only" for="inlineFormInputName2">Name</label>
               <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
 
@@ -755,92 +756,103 @@
             </div>
 
             <form class="form-standard">
-              <div class="form-header">
+              <div class="form__header">
                 <h2 class="headline-2 mb-4">Form Header Title</h2>
               </div>
-              <div class="form-row">
-                <div class="col-md-12 mb-3">
-                  <label for="validationServer01">Company</label>
-                  <input type="text" class="form-control" id="validationServer0" value="Sonar" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col-md-6 mb-3">
-                  <label for="validationServer01">First name</label>
-                  <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-                  <div class="valid-feedback">
-                    Looks good!
+              
+              <div class="form__body">
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="validationServer01">Company</label>
+                    <input type="text" class="form-control" id="validationServer0" value="Sonar" required>
                   </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <label for="validationServer02">Last name</label>
-                  <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-                  <div class="valid-feedback">
-                    Looks good!
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationServer01">First name</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationServer02">Last name</label>
+                    <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="col-md-6 mb-3">
-                  <label for="validationServer03">City</label>
-                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-                  <div id="validationServer03Feedback" class="invalid-feedback">
-                    Please provide a valid city.
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationServer03">City</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                    <div id="validationServer03Feedback" class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationServer04">State</label>
+                    <select class="custom-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option>...</option>
+                    </select>
+                    <div id="validationServer04Feedback" class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationServer05">Zip</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                    <div id="validationServer05Feedback" class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                  <label for="validationServer04">State</label>
-                  <select class="custom-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                  </select>
-                  <div id="validationServer04Feedback" class="invalid-feedback">
-                    Please select a valid state.
+                <div class="form-group">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
                   </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                  <label for="validationServer05">Zip</label>
-                  <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-                  <div id="validationServer05Feedback" class="invalid-feedback">
-                    Please provide a valid zip.
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                      Agree to terms and conditions
+                    </label>
+                    <div  id="invalidCheck3Feedback" class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">1</label>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Example file input</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                  <label class="form-check-label" for="inlineCheckbox2">2</label>
+  
+                <div class="alert alert-info mb-4 mt-4" role="alert">
+                  A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-                  <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="form-check">
-                  <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                  <label class="form-check-label" for="invalidCheck3">
-                    Agree to terms and conditions
-                  </label>
-                  <div  id="invalidCheck3Feedback" class="invalid-feedback">
-                    You must agree before submitting.
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlFile1">Example file input</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
               </div>
 
-              <div class="alert alert-info mb-4 mt-4" role="alert">
-                A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+              <div class="form__footer">
+                <div class="row">
+                  <div class="col-12 text-right">
+                    <button class="btn btn-primary btn--submit" type="submit">Create</button>
+                  </div>
+                </div>
               </div>
               
-              <button class="btn btn-primary btn--submit" type="submit">Create</button>
+              
             </form>
 
           </div>

@@ -14,7 +14,7 @@ A theme based off Bootstrap for external tools.
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <!-- Sonar Dark Night Theme CSS -->
+    <!-- Sonar Dark Rye Theme CSS -->
     <link rel="stylesheet" href="assets/css/sonar-darkrye.css">
 
     <title>Hello, world!</title>

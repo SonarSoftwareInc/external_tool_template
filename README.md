@@ -1,4 +1,4 @@
-# Sonar "Dark Night" Theme
+# Sonar "Dark Rye" Theme
 A theme based off Bootstrap for external tools.
 
 ## Quick Start

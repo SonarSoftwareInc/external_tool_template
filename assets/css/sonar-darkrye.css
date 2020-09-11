@@ -1,9 +1,11 @@
 /**
  *
- * Sonar Dark Night Theme
+ * Sonar Dark Rye Theme
  * An override of the Bootstrap base theme
  * 
 */
+
+/* variables */
 
 :root {
     --colors--neutral--black1: #021627;
@@ -16,6 +18,7 @@
     --colors--primary-bright: #2cbfff;
     --colors--primary: #2cbfff;
     --colors--primary0: #0d75bf;
+    --colors--primary-gradient: linear-gradient(200deg, #2cbfff, #2caaff); /* #2cbfff, #0d75bf */
     --colors--primary4: #d5e7f0;
     --colors--primary2: #165f7f;
     --colors--primary3: #095280;
@@ -32,7 +35,7 @@
 }
 
 
-/* Typography */
+/* typography */
 
 @font-face {
     font-family: 'Inter';
@@ -77,20 +80,10 @@
     src: url("../../assets/fonts/interFont/Inter-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/interFont/Inter-BoldItalic.woff") format("woff"); }
   
 
+/* misc */
+
 html {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-body.sonar-darknight {
-    background-color: var(--colors--neutral--black1);
-    color: var(--colors--neutral--grey3);
-    font-family: var(--text--font--family);
-}
-.sonar-darknight [data-label] {
-    background: var(--colors--primary4);
-    color: var(--colors--neutral--grey2);
-    padding: 1px 4px;
-    border-radius: 2px;
-    margin: 0 5px;
 }
 a {
     color: var(--colors--primary);
@@ -98,9 +91,29 @@ a {
 hr {
     border-color: var(--colors--neutral--grey3);
 }
+.blockquote-footer {
+    color: var(--colors--neutral--white3);
+    margin-top: 10px;
+}
 
 
-/* Animations */
+/* theme */
+
+body.sonar-darkrye {
+    background-color: var(--colors--neutral--black1);
+    color: var(--colors--neutral--grey3);
+    font-family: var(--text--font--family);
+}
+.sonar-darkrye [data-label] {
+    background: var(--colors--primary4);
+    border-radius: 2px;
+    color: var(--colors--neutral--grey2);
+    margin: 0 5px;
+    padding: 1px 4px;
+}
+
+
+/* animations */
 
 @keyframes button--pulse {
     0% {
@@ -113,28 +126,47 @@ hr {
 }
 
 
-/* Badge */
+/* badge */
 
-.sonar-darknight .badge {
+.sonar-darkrye .badge {
     background: var(--colors--primary4);
     border: 1px solid rgba(34, 44, 58, 0.085);
     color: var(--colors--neutral--grey2);
 }
-.sonar-darknight .badge-primary {
+.sonar-darkrye .badge-primary {
     background-color: var(--colors--primary3);
 }
-.sonar-darknight .badge-secondary {
+.sonar-darkrye .badge-secondary {
     background-color: var(--colors--neutral--grey3);
     font-weight: 500;
 }
 
 
-/* Form */
+/* form */
 
-.sonar-darknight .form {
+.sonar-darkrye .form {}
+.sonar-darkrye .form__header {}
+.sonar-darkrye .form__footer {}
+.sonar-darkrye .form {
     padding: 2rem;
 }
-.sonar-darknight .form-standard {
+
+
+/* form-inline */
+
+.sonar-darkrye .form-inline .form__body {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+.sonar-darkrye .form-inline {
+    padding: 0;
+}
+
+
+/* form-standard */
+
+.sonar-darkrye .form-standard {
     background-color: var(--colors--neutral--grey1);
     border-radius: var(--bg-border-radius);
     color: var(--colors--neutral--grey4);
@@ -143,33 +175,32 @@ hr {
 }
 
 
+/* input */
 
-/* Input */
-
-.sonar-darknight .form-inline .form-control,
-.sonar-darknight .form-standard .custom-select,
-.sonar-darknight .form-standard .form-control,
-.sonar-darknight .form-signin input {
+.sonar-darkrye .form-inline .form-control,
+.sonar-darkrye .form-standard .custom-select,
+.sonar-darkrye .form-standard .form-control,
+.sonar-darkrye .form-signin input {
     background: var(--colors--neutral--grey2);
     color: var(--colors--neutral--grey4);
 }
-.sonar-darknight .form-inline .form-control:not(.is-valid):not(.is-invalid),
-.sonar-darknight .form-standard .custom-select:not(.is-valid):not(.is-invalid),
-.sonar-darknight .form-standard .form-control:not(.is-valid):not(.is-invalid),
-.sonar-darknight .form-signin input {
+.sonar-darkrye .form-inline .form-control:not(.is-valid):not(.is-invalid),
+.sonar-darkrye .form-standard .custom-select:not(.is-valid):not(.is-invalid),
+.sonar-darkrye .form-standard .form-control:not(.is-valid):not(.is-invalid),
+.sonar-darkrye .form-signin input {
     border-color: var(--colors--neutral--grey3);
 }
-.sonar-darknight .form-signin input,
-.sonar-darknight .form-inline .form-control {
+.sonar-darkrye .form-signin input,
+.sonar-darkrye .form-inline .form-control {
     border: none;
 }
-.sonar-darknight .form-inline .input-group-text {
+.sonar-darkrye .form-inline .input-group-text {
     background-color: var(--colors--neutral--grey3);
     border-color: transparent;
     color: var(--colors--neutral--grey4);
 }
-.sonar-darknight .form-control-file,
-.sonar-darknight .input[type="file"] {
+.sonar-darkrye .form-control-file,
+.sonar-darkrye .input[type="file"] {
     background-color: var(--colors--neutral--grey2);
     border: solid 1px var(--colors--neutral--grey3);
     padding: 10px;
@@ -177,204 +208,208 @@ hr {
 }
 
 
-/* Button Primary */
+/* button primary */
 
-.sonar-darknight .btn-link {
+.sonar-darkrye .btn-link {
     color: var(--colors--primary0);
 }
-.sonar-darknight .btn-link:hover,
-.sonar-darknight .btn-link:focus,
-.sonar-darknight .btn-link:active {
+.sonar-darkrye .btn-link:hover,
+.sonar-darkrye .btn-link:focus,
+.sonar-darkrye .btn-link:active {
     color: var(--colors--primary);
 }
-.sonar-darknight .btn-primary {
-    color: var(--colors--neutral--white3);
-    background: var(--colors--primary);
+.sonar-darkrye .btn-primary {
+    background: var(--colors--primary-gradient);
     border-color: var(--colors--primary-bright);
+    color: var(--colors--neutral--white3);
 }
-.sonar-darknight .btn-primary:focus,
-.sonar-darknight .btn-primary:hover {
-    background: var(--colors--primary-bright);
+.sonar-darkrye .btn-primary:focus,
+.sonar-darkrye .btn-primary:hover {
+    background: var(--colors--primary-gradient);
     border-color: var(--colors--primary-bright); 
 }
-.sonar-darknight .btn:hover {
+.sonar-darkrye button:hover,
+.sonar-darkrye button:focus,
+.sonar-darkrye .btn:hover,
+.sonar-darkrye .btn:focus {
+    outline: none;
     animation: button--pulse 1s infinite alternate;
 }
-.sonar-darknight .btn--submit {
-    background: linear-gradient(200deg, var(--colors--primary), var(--colors--primary-bright));
+.sonar-darkrye .btn--submit {
+    background: var(--colors--primary-gradient);
     border-color: var(--colors--primary-bright);
     color: var(--colors--neutral--white3);
 }
-.sonar-darknight .btn--submit:hover {
-    background: linear-gradient(200deg, var(--colors--primary-bright), var(--colors--primary));
+.sonar-darkrye .btn--submit:hover {
+    background: var(--colors--primary-gradient);
     border-color: var(--colors--primary-bright);
     color: var(--colors--neutral--white3);
 }
-.sonar-darknight .btn,
-.sonar-darknight .btn--submit,
-.sonar-darknight .btn--cancel {
+.sonar-darkrye .btn,
+.sonar-darkrye .btn--submit,
+.sonar-darkrye .btn--cancel {
+    font-size: 1rem;
     height: 38px;
     line-height: 35px;
     padding: 0 2rem;
-    height: 38px;
-    font-size: 1rem;
 }
-.sonar-darknight .btn--icon {
+.sonar-darkrye .btn--icon {
     align-items: baseline;
     padding: 0 1rem;
 }
-.sonar-darknight .btn--icon .bi {
+.sonar-darkrye .btn--icon .bi {
     margin-bottom: 4px;
 }
-.sonar-darknight .btn-primary:not(:disabled):not(.disabled).active,
-.sonar-darknight .btn-primary:not(:disabled):not(.disabled):active,
-.sonar-darknight .show > .btn-primary.dropdown-toggle {
-    color: var(--colors--neutral--white3);
+.sonar-darkrye .btn-primary:not(:disabled):not(.disabled).active,
+.sonar-darkrye .btn-primary:not(:disabled):not(.disabled):active,
+.sonar-darkrye .show > .btn-primary.dropdown-toggle {
     background: var(--colors--primary0);
     border-color: var(--colors--primary-bright);
-}
-.sonar-darknight .btn-outline-primary {
     color: var(--colors--neutral--white3);
-    border-color: var(--colors--primary-bright);
 }
-.sonar-darknight .btn-outline-primary:hover {
-    background: var(--colors--primary);
+.sonar-darkrye .btn-outline-primary {
+    border-color: var(--colors--primary-bright);
+    color: var(--colors--neutral--white3);
+}
+.sonar-darkrye .btn-outline-primary:hover {
+    background: var(--colors--primary-gradient);
     border-color: var(--colors--primary-bright);
     color: var(--colors--neutral--white3); 
 }
-.sonar-darknight .btn-primary.disabled,
-.sonar-darknight .btn-primary:disabled {
-    color: var(--colors--neutral--white3);
-    background: var(--colors--primary);
+.sonar-darkrye .btn-primary.disabled,
+.sonar-darkrye .btn-primary:disabled {
+    background: var(--colors--primary-gradient);
     border-color: var(--colors--primary-bright);
+    color: var(--colors--neutral--white3);
 }
-.sonar-darknight .btn.disabled,
-.sonar-darknight .btn:disabled {
+.sonar-darkrye .btn.disabled,
+.sonar-darkrye .btn:disabled {
     cursor: not-allowed;
 }
 
-/* Button info */
 
-.sonar-darknight .btn-info {
-    background-color: var(--colors--primary6);
-    border-color: var(--colors--primary6);
-    color: var(--colors--neutral--white3);
-}
-.sonar-darknight .btn-info:hover {
-    background-color: var(--colors--primary6);
-    border-color: var(--colors--primary6);
-}
-.sonar-darknight .btn-outline-info {
-    border-color: var(--colors--primary6);
-    color: var(--colors--primary6);
-}
-.sonar-darknight .btn-outline-info:hover {
-    background-color: var(--colors--primary6);
-    border-color: var(--colors--primary6);
-    color: var(--colors--neutral--white3);
-}
+/* button secondary */
 
-
-/* Button Secondary */
-
-.sonar-darknight .btn-secondary {
-    color: var(--colors--neutral--white3);
+.sonar-darkrye .btn-secondary {
     background: var(--bg--gradient1);
     border-color: var(--colors--neutral--grey3);
+    color: var(--colors--neutral--white3);
 }
-.sonar-darknight .btn-secondary:focus,
-.sonar-darknight .btn-secondary:hover {
+.sonar-darkrye .btn-secondary:focus,
+.sonar-darkrye .btn-secondary:hover {
     border-color: var(--colors--neutral--grey3); 
 }
-.sonar-darknight .btn-secondary:not(:disabled):not(.disabled).active,
-.sonar-darknight .btn-secondary:not(:disabled):not(.disabled):active,
-.sonar-darknight .show > .btn-secondary.dropdown-toggle {
-    color: var(--colors--neutral--white3);
+.sonar-darkrye .btn-secondary:not(:disabled):not(.disabled).active,
+.sonar-darkrye .btn-secondary:not(:disabled):not(.disabled):active,
+.sonar-darkrye .show > .btn-secondary.dropdown-toggle {
     background: var(--colors--neutral--grey2);
     border-color: var(--colors--neutral--grey3);
-}
-.sonar-darknight .btn-outline-secondary {
     color: var(--colors--neutral--white3);
-    border-color: var(--colors--neutral--grey3);
 }
-.sonar-darknight .btn-outline-secondary:hover {
+.sonar-darkrye .btn-outline-secondary {
+    border-color: var(--colors--neutral--grey3);
+    color: var(--colors--neutral--white3);
+}
+.sonar-darkrye .btn-outline-secondary:hover {
     background: var(--bg--gradient1);
     border-color: var(--colors--neutral--grey3);
     color: var(--colors--neutral--white3); 
 }
-.sonar-darknight .btn-secondary.disabled,
-.sonar-darknight .btn-secondary:disabled {
-    color: var(--colors--neutral--white3);
+.sonar-darkrye .btn-secondary.disabled,
+.sonar-darkrye .btn-secondary:disabled {
     background: var(--bg--gradient1);
     border-color: var(--colors--neutral--grey3);
+    color: var(--colors--neutral--white3);
 }
 
 
-/* Button Success */
+/* button info */
 
-.sonar-darknight .btn-success {
+.sonar-darkrye .btn-info {
+    background-color: var(--colors--primary6);
+    border-color: var(--colors--primary6);
+    color: var(--colors--neutral--white3);
+}
+.sonar-darkrye .btn-info:hover {
+    background-color: var(--colors--primary6);
+    border-color: var(--colors--primary6);
+}
+.sonar-darkrye .btn-outline-info {
+    border-color: var(--colors--primary6);
+    color: var(--colors--primary6);
+}
+.sonar-darkrye .btn-outline-info:hover {
+    background-color: var(--colors--primary6);
+    border-color: var(--colors--primary6);
+    color: var(--colors--neutral--white3);
+}
+
+
+/* button success */
+
+.sonar-darkrye .btn-success {
     background-color: var(--colors--positive);
     border-color: var(--colors--positive);
 }
-.sonar-darknight .btn-success:hover {
+.sonar-darkrye .btn-success:hover {
     background-color: var(--colors--positive);
     border-color: var(--colors--positive);
 }
-.sonar-darknight .btn-outline-success {
+.sonar-darkrye .btn-outline-success {
+    border-color: var(--colors--positive);
     color: var(--colors--positive);
-    border-color: var(--colors--positive);
 }
 
-.sonar-darknight .btn-outline-success:hover {
+.sonar-darkrye .btn-outline-success:hover {
     background-color: var(--colors--positive);
     border-color: var(--colors--positive);
     color: var(--colors--neutral--white3);
 }
 
 
+/* button danger */
 
-/* Button Danger */
-
-.sonar-darknight .btn-danger {
+.sonar-darkrye .btn-danger {
     background-color: var(--colors--danger);
     border-color: var(--colors--danger);
 }
-.sonar-darknight .btn-danger:hover {
+.sonar-darkrye .btn-danger:hover {
     background-color: var(--colors--danger);
     border-color: var(--colors--danger);
 }
-.sonar-darknight .btn-outline-danger {
+.sonar-darkrye .btn-outline-danger {
+    border-color: var(--colors--danger);
     color: var(--colors--danger);
-    border-color: var(--colors--danger);
 }
-.sonar-darknight .btn-outline-danger:hover {
+.sonar-darkrye .btn-outline-danger:hover {
     background-color: var(--colors--danger);
     border-color: var(--colors--danger);
     color: var(--colors--neutral--white3);
 }
 
-/* Button Warning */
 
-.sonar-darknight .btn-warning {
+/* button warning */
+
+.sonar-darkrye .btn-warning {
     background-color: var(--colors--warning);
     border-color: var(--colors--warning);
 }
-.sonar-darknight .btn-warning:hover {
+.sonar-darkrye .btn-warning:hover {
     background-color: var(--colors--warning);
     border-color: var(--colors--warning);
 }
-.sonar-darknight .btn-outline-warning {
+.sonar-darkrye .btn-outline-warning {
+    border-color: var(--colors--warning);
     color: var(--colors--warning);
-    border-color: var(--colors--warning);
 }
-.sonar-darknight .btn-outline-warning:hover {
+.sonar-darkrye .btn-outline-warning:hover {
     background-color: var(--colors--warning);
     border-color: var(--colors--warning);
     color: var(--colors--neutral--black1);
 }
 
 
-/* George */
+/* george */
 
 .sonar--branding {
     margin-bottom: 2vh;
@@ -385,29 +420,29 @@ hr {
 .sonar--branding .sonar--logo--text {
     color: var(--colors--neutral--white1);
     font-size: 40px;
-    margin: -5px 0 0 7px;
     font-weight: normal;
+    margin: -5px 0 0 7px;
 }
 
 
-/* Toast */
+/* toast */
 
-.sonar-darknight.toast {}
-.sonar-darknight.toast-header {
+.sonar-darkrye.toast {}
+.sonar-darkrye.toast-header {
     background-color: var(--colors--neutral--white1);
     color: var(--colors--neutral--grey3);
 }
-.sonar-darknight.toast-header .brand-logo {
+.sonar-darkrye.toast-header .brand-logo {
     width: 20px;
 }
 
 
-/* Modal */
+/* modal */
 
-.sonar-darknight .modal-content {
+.sonar-darkrye .modal-content {
     border: 0;
 }
-.sonar-darknight .modal-header {
+.sonar-darkrye .modal-header {
     align-items: center;
     background: var(--colors--neutral--grey1);
     border-top-left-radius: 4px;
@@ -417,139 +452,133 @@ hr {
     justify-content: space-between;
     padding: 1rem 3rem;
 }
-.sonar-darknight .modal-header .close {
+.sonar-darkrye .modal-header .close {
     color: var(--colors--neutral--white1);
-    font-size: 1.75rem;
-    padding: 1rem 1rem;
+    font-size: 2.75rem;
     margin: -1rem -1rem -1rem auto;
+    padding: 1rem 1rem;
 }
-.sonar-darknight .modal-title {
-    line-height: 1.5;
+.sonar-darkrye .modal-title {
     font-size: 30px;
-    padding-top: 1.5rem;
+    line-height: 1.5;
     padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
     text-transform: capitalize;
 }
-.sonar-darknight .modal-body {
+.sonar-darkrye .modal-body {
     box-shadow: 0 12px 44px rgba(0, 0, 0, 0.1);
     background: var(--colors--neutral--white3);
 }
-.sonar-darknight .modal-dialog {
-    width: 100%;
+.sonar-darkrye .modal-dialog {
     max-width: 968px;
+    width: 100%;
 }
-.sonar-darknight .modal-footer {
-    padding: 1.5rem;
+.sonar-darkrye .modal-footer {
     background: var(--colors--neutral--black1);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    padding: 1.5rem;
 }
-.sonar-darknight .modal-footer .btn {
+.sonar-darkrye .modal-footer .btn {
     margin-right: 20px;
 }
 
-.sonar-darknight .modal-footer .btn:last-child {
+.sonar-darkrye .modal-footer .btn:last-child {
     margin-right: 0;
 }
 
-.sonar-darknight .close {
+.sonar-darkrye .close {
     color: var(--colors--neutral--white3);
     font-weight: 300;
 }
-.sonar-darknight .close:hover {
+.sonar-darkrye .close:hover {
     color: var(--colors--neutral--white3);
 }
 
 
+/* table */
 
-
-/* Table */
-
-.sonar-darknight .table {
-    color: var(--colors--neutral--grey4);
+.sonar-darkrye .table {
     border-radius: var(--bg-border-radius);
+    color: var(--colors--neutral--grey4);
 }
-.sonar-darknight .table-hover tbody tr:hover {
+.sonar-darkrye .table-hover tbody tr:hover {
     background-color: var(--colors--neutral--grey2);
     color: var(--colors--neutral--grey4);
 }
-.sonar-darknight .table td,
-.sonar-darknight .table th {
+.sonar-darkrye .table td,
+.sonar-darkrye .table th {
     border-top: 1px solid var(--colors--neutral--grey3);
     vertical-align: middle;
 }
-.sonar-darknight .table th {
+.sonar-darkrye .table th {
     color: var(--colors--neutral--white1);
 }
-.sonar-darknight .table thead th {
-    vertical-align: middle;
+.sonar-darkrye .table thead th {
     border-bottom-width: 1px;
+    vertical-align: middle;
 }
 
 
+/* nav pill */
 
-/* Nav Pill */
-
-.sonar-darknight .nav-pills .nav-link,
-.sonar-darknight .nav-pills .show > .nav-link {
-    color: var(--colors--neutral--grey3);
-    display: inline-flex;
+.sonar-darkrye .nav-pills .nav-link,
+.sonar-darkrye .nav-pills .show > .nav-link {
     align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-    padding: 10px 30px;
-    margin: 0 5px 10px 5px;
-    text-align: center;
     background: rgba(44, 191, 255, 0);
     border-width: 1px;
     border-style: solid;
     border-color: rgba(144, 157, 173, 0.5);
+    border-radius: 25px;
+    color: var(--colors--neutral--grey3);
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px 30px;
+    margin: 0 5px 10px 5px;
+    text-align: center;
     transition: background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9), border-color 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
-.sonar-darknight .nav-pills .nav-link.active {
-    color: var(--colors--neutral--white1);
+.sonar-darkrye .nav-pills .nav-link.active {
     background: var(--bg--gradient1);
     border-color: var(--colors--neutral--grey3);
+    color: var(--colors--neutral--white1);
 }
 
 
+/* breadcrumb */
 
-/* Breadcrumb */
-
-.sonar-darknight .breadcrumb {
+.sonar-darkrye .breadcrumb {
     background-color: var(--colors--neutral--grey1);
     color: var(--colors--neutral--grey3);
 }
-.sonar-darknight .breadcrumb a {
+.sonar-darkrye .breadcrumb a {
     color: var(--colors--neutral--grey3);
 }
 
 
+/* pagination */
 
-/* Pagination */
-
-.sonar-darknight .page-link {
+.sonar-darkrye .page-link {
     background-color: var(--colors--neutral--grey1);
     border-color: var(--colors--neutral--grey2);
     color: var(--colors--neutral--grey4);
     padding: .5rem 1rem;
 }
-.sonar-darknight .page-link:hover {
+.sonar-darkrye .page-link:hover {
+    background-color: var(--colors--neutral--grey3);
     border-color: var(--colors--neutral--grey2);
     color: var(--colors--neutral--grey1);
-    background-color: var(--colors--neutral--grey3);
 }
 
 
+/* progress bar */
 
-/* Progress Bar */
-
-.sonar-darknight .progress {
+.sonar-darkrye .progress {
     background-color: var(--colors--neutral--grey2);
 }
 
 
-/* Jumbotron */
+/* jumbotron */
 
 .jumbotron {
     background-color: var(--colors--neutral--grey1);
@@ -557,17 +586,16 @@ hr {
 }
 
 
+/* toast: notification */
 
-/* Toast: Notification */
-
-.sonar-darknight .toast {
+.sonar-darkrye .toast {
     border-radius: var(--bg-border-radius);
     overflow: hidden;
 }
-.sonar-darknight .toast-body {
+.sonar-darkrye .toast-body {
     background: var(--colors--primary4);
 }
-.sonar-darknight .toast-header {
+.sonar-darkrye .toast-header {
     background-color: var(--colors--neutral--grey1);
     color: var(--colors--neutral--grey4);
 }

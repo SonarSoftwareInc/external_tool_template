@@ -15,11 +15,11 @@ A theme based off Bootstrap for external tools.
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!-- Sonar Dark Night Theme CSS -->
-    <link rel="stylesheet" href="assets/css/sonar-darknight.css">
+    <link rel="stylesheet" href="assets/css/sonar-darkrye.css">
 
     <title>Hello, world!</title>
   </head>
-  <body class="sonar-darknight">
+  <body class="sonar-darkrye">
     <h1>Hello, world!</h1>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

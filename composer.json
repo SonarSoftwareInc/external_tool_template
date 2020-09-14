@@ -1,0 +1,6 @@
+{
+    "name": "sonarsoftwareinc/external_tool_template",
+    "description": "A template for building external tools for use with Sonar",
+    "type": "library",
+    "require": {}
+}

@@ -18,16 +18,18 @@
     --colors--primary-bright: #2cbfff;
     --colors--primary: #2cbfff;
     --colors--primary0: #0d75bf;
-    --colors--primary-gradient: linear-gradient(200deg, #2cbfff, #2caaff); /* #2cbfff, #0d75bf */
     --colors--primary4: #d5e7f0;
     --colors--primary2: #165f7f;
     --colors--primary3: #095280;
     --colors--primary5: #1e9c64;
     --colors--primary6: #47a889;
-
+    
     --colors--positive: #1e9c64;
     --colors--danger: #ff1a56;
     --colors--warning: #ff9536;
+    
+    --colors--neutral--grey3-transparent: rgba(74, 90, 104, 0.45);
+    --colors--primary-gradient: linear-gradient(200deg, #2cbfff, #2caaff); /* #2cbfff, #0d75bf */
     
     --bg--gradient1: linear-gradient(200deg, rgba(85, 103, 119, 0.95), rgba(85, 89, 119, 0.95));
     --bg--transparent--light: rgba(255,255,255, 0.1);
@@ -589,6 +591,12 @@ body.sonar-darkrye {
     margin: 0 5px 10px 5px;
     text-align: center;
     transition: background 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9), border-color 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+}
+.sonar-darkrye .nav-pills .nav-link:hover,
+.sonar-darkrye .nav-pills .show > .nav-link:hover {
+    background: var(--colors--neutral--grey3-faded);
+    border-color: var(--colors--neutral--grey3);
+    color: var(--colors--neutral--white1);
 }
 .sonar-darkrye .nav-pills .nav-link.active {
     background: var(--bg--gradient1);

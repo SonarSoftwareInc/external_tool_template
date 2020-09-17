@@ -594,7 +594,7 @@ body.sonar-darkrye {
 }
 .sonar-darkrye .nav-pills .nav-link:hover,
 .sonar-darkrye .nav-pills .show > .nav-link:hover {
-    background: var(--colors--neutral--grey3-faded);
+    background: var(--colors--neutral--grey3-transparent);
     border-color: var(--colors--neutral--grey3);
     color: var(--colors--neutral--white1);
 }

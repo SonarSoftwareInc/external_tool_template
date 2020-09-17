@@ -29,6 +29,23 @@
             </div>
             <h2 class="d-flex align-items-center">A Bootstrap base theme template</h2>
             <p>Below contains a few components to help visualize look and feel of the UI.</p>
+            <ul class="nav nav-pills mt-5">
+              <a href="#quick-start" class="nav-link">Quick Start</a>
+              <a href="#jumbotron" class="nav-link">Jumbotron</a>
+              <a href="#tab-pills" class="nav-link">Tab Pills</a>
+              <a href="#buttons" class="nav-link">Buttons</a>
+              <a href="#icons" class="nav-link">Icons</a>
+              <a href="#toast" class="nav-link">Toast - Push Notification</a>
+              <a href="#progress-bars" class="nav-link">Progress Bars</a>
+              <a href="#table" class="nav-link">Table</a>
+              <a href="#form-structure" class="nav-link">Form Structure</a>
+              <a href="#modal-form" class="nav-link">Modal Form</a>
+              <a href="#inline-form" class="nav-link">Inline Form</a>
+              <a href="#standard-form" class="nav-link">Standard Form</a>
+              <a href="#supported-elements" class="nav-link">Form Supported Elements</a>
+              <a href="#login-page" class="nav-link">Login Page</a>
+              <a href="#error-page" class="nav-link">Error Page</a>
+            </ul>
           </div>
         </div>
       </div>
@@ -43,6 +60,7 @@
         STARTER 
         ==================================================================================
       -->
+      <a id="quick-start"></a>
       <div class="container container--example">
         <div class="row">
           <div class="col-12">
@@ -88,6 +106,7 @@
         Jumbotron 
         ==================================================================================
       -->
+      <a id="jumbotron"></a>
       <div class="container  container--example">
         <div class="row">
           <div class="col-12">
@@ -127,9 +146,10 @@
 
       <!--
         =================================================================================
-        TAB - PILL EXAMPLE 
+        TAB - PILLS EXAMPLE
         =================================================================================
       -->
+      <a id="tab-pills"></a>
       <div class="container container--example">
         <div class="row">
           <div class="col-12">
@@ -195,6 +215,7 @@
         BUTTONS EXAMPLE 
         =================================================================================
       -->
+      <a id="buttons"></a>
       <div class="container container--example">
         <div class="row">
           <div class="col-12">
@@ -267,13 +288,14 @@
         ICONS 
         =================================================================================
       -->
+      <a id="icons"></a>
       <div class="container container--example">
         <div class="row">
           <div class="col-12">
 
             <div class="section__label">
               <h2 class="d-flex">
-                <span>Bootstrap Icons</span>
+                <span>Icons</span>
                 <a href="https://icons.getbootstrap.com/" target="_blank" class="btn btn-outline-secondary btn--icon">
                   <span>ALL ICONS</span>
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -361,6 +383,7 @@
         TOAST - Push Notification 
         ==================================================================================
       -->
+      <a id="toast"></a>
       <div class="container  container--example">
         <div class="row">
           <div class="col-12">
@@ -408,6 +431,7 @@
         PROGRESS BARS
         =================================================================================
       -->
+      <a id="progress-bars"></a>
       <div class="container  container--example">
         <div class="row">
           <div class="col-12">
@@ -451,6 +475,7 @@
         TABLE
         =================================================================================
       -->
+      <a id="table"></a>
       <div class="container  container--example">
         <div class="row">
           <div class="col-12">
@@ -569,7 +594,7 @@
         Form Structure
         =================================================================================
       -->
-
+      <a id="form-structure"></a>
       <div class="container  container--example">
         <div class="row">
           <div class="col-12">
@@ -604,6 +629,7 @@
         MODAL COMPONENT & FORM
         =================================================================================
       -->
+      <a id="modal-form"></a>
       <div class="container  container--example">
         <div class="row">
           <div class="col-12">
@@ -717,6 +743,7 @@
         INLINE FORM
         =================================================================================
       -->
+      <a id="inline-form"></a>
       <div class="container  container--example">
         <div class="row">
           <div class="col-12">
@@ -770,6 +797,7 @@
         STANDARD FORM
         =================================================================================
       -->
+      <a id="standard-form"></a>
       <div class="container  container--example">
         <div class="row">
           <div class="col-12">
@@ -867,6 +895,24 @@
                   </div>
                 </div>
                 <div class="form-group">
+                  <label for="disabledTextInput">Disabled input</label>
+                  <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                </div>
+                <div class="form-group">
+                  <label for="disabledSelect">Disabled select menu</label>
+                  <select id="disabledSelect" class="form-control">
+                    <option>Disabled select</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                    <label class="form-check-label" for="disabledFieldsetCheck">
+                      Can't check this
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
                   <label for="exampleFormControlFile1">Example file input</label>
                   <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
@@ -890,18 +936,131 @@
       </div>
 
 
-
       <!--
         =================================================================================
-        LOGIN 
-        ==================================================================================
+        Form Supported elements
+        =================================================================================
       -->
+      <a id="supported-elements"></a>
       <div class="container  container--example">
         <div class="row">
           <div class="col-12">
 
             <div class="section__label">
-              <h2>Login</h2>
+              <h2 class="d-flex">
+                <span>Form - Supported elements</span>
+                <a href="https://getbootstrap.com/docs/4.5/components/forms/#supported-elements" target="_blank" class="btn btn-outline-secondary btn--icon">
+                  <span>HTML</span>
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>
+                </a>
+              </h2>
+            </div>
+
+            <form class="form form-standard was-validated">
+              <div class="mb-3">
+                <label for="validationTextarea">Textarea</label>
+                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                <div class="invalid-feedback">
+                  Please enter a message in the textarea.
+                </div>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+                <div class="invalid-feedback">Example invalid feedback text</div>
+              </div>
+
+              <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
+              </div>
+              <div class="custom-control custom-radio mb-3">
+                <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
+                <div class="invalid-feedback">More example invalid feedback text</div>
+              </div>
+
+              <div class="mb-3">
+                <select class="custom-select" required>
+                  <option value="">Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="invalid-feedback">Example invalid custom select feedback</div>
+              </div>
+
+              <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                <div class="invalid-feedback">Example invalid custom file feedback</div>
+              </div>
+
+              <div class="mb-3">
+                <div class="input-group is-invalid">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
+                  </div>
+                  <input type="text" class="form-control is-invalid" aria-describedby="validatedInputGroupPrepend" required>
+                </div>
+                <div class="invalid-feedback">
+                  Example invalid input group feedback
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="input-group is-invalid">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="validatedInputGroupSelect">Options</label>
+                  </div>
+                  <select class="custom-select" id="validatedInputGroupSelect" required>
+                    <option value="">Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="invalid-feedback">
+                  Example invalid input group feedback
+                </div>
+              </div>
+
+              <div class="input-group is-invalid">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="validatedInputGroupCustomFile" required>
+                  <label class="custom-file-label" for="validatedInputGroupCustomFile">Choose file...</label>
+                </div>
+                <div class="input-group-append">
+                   <button class="btn btn-outline-secondary" type="button">Button</button>
+                </div>
+              </div>
+              <div class="invalid-feedback">
+                Example invalid input group feedback
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--
+        =================================================================================
+        LOGIN PAGE
+        ==================================================================================
+      -->
+      <a id="login-page"></a>
+      <div class="container  container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section__label">
+              <h2>Login Page</h2>
             </div>
 
             <form class="form form-signin text-center">
@@ -939,6 +1098,62 @@
         </div>
       </div>
 
+
+
+
+      <!--
+        =================================================================================
+        ERROR PAGE
+        ==================================================================================
+      -->
+      <a id="error-page"></a>
+      <div class="container  container--example">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section__label">
+              <h2>Error Page</h2>
+            </div>
+
+            <div class="section">
+
+              <div class="card card--error">
+                <div class="card-top">
+                  <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-exclamation-triangle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.938 2.016a.146.146 0 0 0-.054.057L1.027 13.74a.176.176 0 0 0-.002.183c.016.03.037.05.054.06.015.01.034.017.066.017h13.713a.12.12 0 0 0 .066-.017.163.163 0 0 0 .055-.06.176.176 0 0 0-.003-.183L8.12 2.073a.146.146 0 0 0-.054-.057A.13.13 0 0 0 8.002 2a.13.13 0 0 0-.064.016zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                    <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                  </svg>
+                  <h1 class="display-3 mb4">
+                    <span class="error-message__name">Internal Server Error</span>
+                  </h1>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Status Code: 500</h5>
+                  <p class="card-text">There was a problem serving the requested page.</p>
+                  <a href="#" class="btn btn-outline-secondary mt-4">Return to Dashboard</a>
+                </div>
+              </div>
+
+              <div class="card card--error">
+                <div class="card-top">
+                  <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-exclamation-triangle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.938 2.016a.146.146 0 0 0-.054.057L1.027 13.74a.176.176 0 0 0-.002.183c.016.03.037.05.054.06.015.01.034.017.066.017h13.713a.12.12 0 0 0 .066-.017.163.163 0 0 0 .055-.06.176.176 0 0 0-.003-.183L8.12 2.073a.146.146 0 0 0-.054-.057A.13.13 0 0 0 8.002 2a.13.13 0 0 0-.064.016zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                    <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                  </svg>
+                  <h1 class="display-3 mb4">
+                    <span class="error-message__name">Page Not Found!</span>
+                  </h1>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Status Code: 404</h5>
+                  <p class="card-text">There was a problem serving the requested page.</p>
+                  <a href="#" class="btn btn-outline-secondary mt-4">Return to Dashboard</a>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
 
     </div>
 
